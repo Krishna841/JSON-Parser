@@ -119,7 +119,7 @@ const FormRender = ({
                 reRender={reRender}
               />
             ) : (
-              <></>
+              null
             )}
           </>
         );
