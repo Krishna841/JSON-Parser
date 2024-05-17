@@ -2,11 +2,11 @@
 const { CmpApi } = require("@iabtechlabtcf/cmpapi");
 const {TCModel, TCString, GVL} = require("@iabtechlabtcf/core");
 
-var injectedOptions = {"isIabTcf": true,"flow": "OPT_IN", "key": "31e22359d39b4d94904b46d7bdec6268", "timeoutSeconds": 10, "scripts": {}, "frames": {}, "cookies": {}, "pixels": {"//static.ads-twitter.com/uwt.js": "C002", "https://a.quora.com/qevents.js": "C002", "https://connect.facebook.net/en_US/fbevents.js": "C002", "https://snap.licdn.com/li.lms-analytics/insight.min.js": "C002", "edge.fullstory.com/s/fs.js": "C004", "https://cdn.segment.com/analytics.js/v1": "C004", "'squarespace-common'": "C004", "'squarespace-performance'": "C004", "//www.google-analytics.com/analytics.js": "C004", "//static.hotjar.com/c/hotjar-": "C004", "ga('send'": "C004", "function gtag()": "C004"}};
-const CUSTOMIZATION = {"remove_privado_branding": false, "banner": {"language": [{"name": "English (US)", "id": "englist"}], "noticeTextColor": "#000", "noticeFontStyle": "normal", "noticeText": "By Clicking on \"Accept\", you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.", "type": "banner", "position": "bottom", "backgroundColor": "#fff","vendorsCTA": {"visibility": true, "text": "Vendors Tab!", "color": "#ff8946", "buttonType": "filled", "buttonColor": "#fff", "fontStyle": "normal",}, "manageSettingsCTA": {"visibility": true, "text": "Cookie Settings", "color": "#1D2FB5", "buttonType": "link", "buttonColor": "#1D2FB5", "fontStyle": "normal"}, "acceptCTA": {"visibility": true, "text": "Accept All", "color": "#fff", "buttonType": "filled", "buttonColor": "#1D2FB5", "fontStyle": "normal"}, "denyCTA": {"visibility": true, "text": "Deny All", "color": "#fff", "buttonType": "filled", "buttonColor": "#1D2FB5", "fontStyle": "normal"}}, "manageCookieBox": {"type": "sidepanel", "background": "#FFFFFF", "textColor": "#000000", "mainButtonColor": "#1D2FB5", "noticeTextColor": "#000000", "noticeBoxStyle": "normal", "noticeText": "When you visit web sites, they may store or retrieve data in your web browser. This storage is often necessary for basic functionality of the web site or the storage may be used for the purposes of marketing, analytics, and personalization of the web site such as storing your preferences.", "noticeFonStyle": "normal"}, "metaDetails": {"manageCookiesTopHeading": "Manage Cookies", "cookieDetailsSubtext": "Cookie details", "poweredByFooterText": "Powered by {privado}", "saveButtonText": "Save"}};
+var injectedOptions = {"isIabTcf":true,"flow": "OPT_IN", "key": "31e22359d39b4d94904b46d7bdec6268", "timeoutSeconds": 10, "scripts": {}, "frames": {}, "cookies": {}, "pixels": {"//static.ads-twitter.com/uwt.js": "C002", "https://a.quora.com/qevents.js": "C002", "https://connect.facebook.net/en_US/fbevents.js": "C002", "https://snap.licdn.com/li.lms-analytics/insight.min.js": "C002", "edge.fullstory.com/s/fs.js": "C004", "https://cdn.segment.com/analytics.js/v1": "C004", "'squarespace-common'": "C004", "'squarespace-performance'": "C004", "//www.google-analytics.com/analytics.js": "C004", "//static.hotjar.com/c/hotjar-": "C004", "ga('send'": "C004", "function gtag()": "C004"}};
+const CUSTOMIZATION = {"remove_privado_branding": false, "banner": {"language": [{"name": "English (US)", "id": "englist"}], "noticeTextColor": "#000", "noticeFontStyle": "normal", "noticeText": "By Clicking on \"Accept\", you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.", "type": "banner", "position": "bottom", "backgroundColor": "#fff", "vendorsCTA": {"visibility": true, "text": "Vendors Tab!", "color": "#ff8946", "buttonType": "filled", "buttonColor": "#fff", "fontStyle": "normal",},"manageSettingsCTA": {"visibility": true, "text": "Cookie Settings", "color": "#1D2FB5", "buttonType": "link", "buttonColor": "#1D2FB5", "fontStyle": "normal"}, "acceptCTA": {"visibility": true, "text": "Accept All", "color": "#fff", "buttonType": "filled", "buttonColor": "#1D2FB5", "fontStyle": "normal"}, "denyCTA": {"visibility": true, "text": "Deny All", "color": "#fff", "buttonType": "filled", "buttonColor": "#1D2FB5", "fontStyle": "normal"}}, "manageCookieBox": {"type": "sidepanel", "background": "#FFFFFF", "textColor": "#000000", "mainButtonColor": "#1D2FB5", "noticeTextColor": "#000000", "noticeBoxStyle": "normal", "noticeText": "When you visit web sites, they may store or retrieve data in your web browser. This storage is often necessary for basic functionality of the web site or the storage may be used for the purposes of marketing, analytics, and personalization of the web site such as storing your preferences.", "noticeFonStyle": "normal"}, "metaDetails": {"manageCookiesTopHeading": "Manage Cookies", "cookieDetailsSubtext": "Cookie details", "poweredByFooterText": "Powered by {privado}", "saveButtonText": "Save"}};
 const CATEGORIZATION = [];
 const VENDORS = ["1", "4", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "18", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "36", "37", "39", "40", "41", "42", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "55", "56", "57", "58", "59", "60", "61", "62", "63", "65", "66", "67", "68", "69", "70", "71", "72", "73", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "97", "98", "100", "101", "102", "104", "108", "109", "110", "111", "114", "115", "119", "120", "122", "124", "126", "127", "128", "129", "130", "131", "132", "133", "134", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "167", "168", "170", "173", "174", "177", "178", "179", "183", "184", "185", "190", "192", "193", "194", "195", "196", "198", "199", "200", "202", "203", "205", "206", "208", "209", "210", "211", "212", "213", "215", "216", "217", "218", "223", "224", "226", "227", "228", "230", "231", "232", "234", "235", "236", "237", "238", "239", "240", "241", "242", "243", "244", "246", "248", "249", "250", "251", "252", "253", "254", "255", "256", "259", "261", "262", "263", "264", "265", "266", "270", "272", "273", "274", "275", "276", "277", "278", "279", "280", "281", "282", "284", "285", "289", "290", "293", "294", "295", "297", "298", "299", "301", "302", "303", "304", "308", "310", "311", "312", "314", "315", "316", "317", "318", "319", "321", "323", "325", "326", "328", "329", "331", "333", "334", "335", "336", "337", "343", "345", "347", "349", "350", "351", "354", "358", "359", "360", "361", "365", "368", "371", "373", "374", "375", "377", "378", "380", "381", "382", "384", "385", "387", "388", "394", "397", "402", "404", "408", "409", "410", "412", "413", "415", "416", "418", "422", "423", "424", "427", "428", "429", "430", "431", "434", "435", "436", "438", "439", "440", "444", "447", "448", "450", "452", "454", "455", "458", "459", "461", "462", "466", "467", "468", "469", "471", "473", "475", "479", "482", "484", "486", "488", "490", "491", "493", "495", "496", "497", "498", "501", "502", "505", "506", "507", "508", "509", "511", "512", "516", "517", "519", "520", "521", "524", "527", "528", "530", "531", "534", "535", "536", "539", "541", "543", "544", "545", "546", "547", "549", "550", "553", "554", "556", "559", "561", "565", "568", "569", "570", "571", "572", "573", "574", "577", "578", "579", "580", "581", "584", "587", "590", "591", "593", "596", "597", "598", "599", "601", "602", "606", "607", "609", "610", "612", "613", "614", "615", "617", "618", "620", "621", "624", "625", "626", "628", "630", "631", "638", "639", "644", "645", "646", "647", "648", "649", "650", "652", "653", "654", "655", "656", "657", "658", "659", "662", "663", "664", "665", "666", "667", "668", "670", "671", "672", "673", "674", "675", "676", "677", "678", "681", "682", "683", "684", "685", "686", "687", "688", "690", "691", "694", "697", "699", "702", "703", "706", "707", "708", "709", "711", "712", "713", "714", "715", "716", "717", "718", "719", "720", "721", "722", "723", "724", "725", "726", "727", "728", "729", "730", "732", "733", "734", "735", "736", "737", "738", "739", "740", "741", "742", "743", "744", "745", "746", "747", "748", "749", "750", "751", "753", "754", "755", "756", "757", "758", "759", "760", "761", "762", "763", "764", "765", "766", "767", "768", "769", "770", "771", "772", "773", "774", "775", "776", "777", "778", "779", "780", "781", "782", "783", "784", "785", "786", "787", "788", "789", "790", "791", "792", "793", "794", "795", "796", "797", "798", "799", "800", "801", "802", "803", "804", "805", "806", "807", "808", "809", "810", "811", "812", "813", "814", "815", "816", "817", "818", "819", "820", "821", "822", "823", "824", "825", "826", "827", "828", "829", "830", "831", "832", "833", "834", "835", "836", "837", "838", "839", "840", "841", "842", "843", "844", "845", "846", "847", "848", "849", "850", "851", "852", "853", "854", "855", "856", "857", "858", "859", "860", "861", "862", "863", "864", "865", "866", "867", "868", "869", "870", "871", "872", "873", "874", "875", "876", "877", "878", "879", "880", "881", "882", "883", "884", "885", "886", "887", "888", "889", "890", "891", "892", "893", "894", "895", "896", "897", "898", "899", "900", "901", "902", "903", "904", "905", "906", "907", "908", "909", "910", "911", "912", "913", "914", "915", "916", "917", "918", "919", "920", "921", "922", "923", "924", "925", "926", "927", "928", "929", "930", "931", "932", "933", "934", "935", "936", "937", "938", "939", "940", "941", "942", "943", "944", "945", "946", "947", "948", "949", "950", "951", "952", "953", "954", "955", "956", "957", "958", "959", "960", "961", "962", "963", "964", "965", "966", "967", "968", "969", "970", "971", "972", "973", "974", "975", "976", "977", "978", "979", "980", "981", "982", "983", "984", "985", "986", "987", "988", "989", "990", "991", "992", "993", "994", "995", "996", "997", "998", "999", "1000", "1001", "1002", "1003", "1004", "1005", "1006", "1007", "1008", "1009", "1010", "1011", "1012", "1013", "1014", "1015", "1016", "1017", "1018", "1019", "1020", "1021", "1022", "1023", "1024", "1025", "1026", "1027", "1028", "1029", "1030", "1031", "1032", "1033", "1034", "1035", "1036", "1037", "1038", "1039", "1040", "1041", "1042", "1043", "1044", "1045", "1046", "1047", "1048", "1049", "1050", "1051", "1052", "1053", "1054", "1055", "1056", "1057", "1058", "1059", "1060", "1061", "1062", "1063", "1064", "1065", "1066", "1067", "1068", "1069", "1070", "1071", "1072", "1073", "1074", "1075", "1076", "1077", "1078", "1079", "1080", "1081", "1082", "1083", "1084", "1085", "1086", "1087", "1088", "1089", "1090", "1091", "1092", "1093", "1094", "1095", "1096", "1097", "1098", "1099", "1100", "1101", "1102", "1103", "1104", "1105", "1106", "1107", "1108", "1109", "1110", "1111", "1112", "1113", "1114", "1115", "1116", "1117", "1118", "1119", "1120", "1121", "1122", "1123", "1124", "1125", "1126", "1127", "1128", "1129", "1130", "1131", "1132", "1133", "1134", "1135", "1136", "1137", "1138", "1139", "1140", "1141", "1142", "1143", "1144", "1145", "1146", "1147", "1148", "1149", "1150", "1151", "1152", "1153", "1154", "1155", "1156", "1157", "1158", "1159", "1160", "1161", "1162", "1163", "1164", "1165", "1166", "1167", "1168", "1169", "1170", "1171", "1172", "1173", "1174", "1175", "1176", "1177", "1178", "1179", "1180", "1181", "1182", "1183", "1184", "1185", "1187", "1188", "1189", "1190", "1191", "1192", "1193", "1194", "1195", "1196", "1197", "1198", "1199", "1200", "1201", "1202", "1203", "1204", "1205", "1206", "1207", "1208", "1209", "1210", "1211", "1212", "1213", "1214", "1215", "1216", "1217", "1218", "1219", "1220", "1221", "1222", "1223", "1224", "1225", "1226", "1227", "1228", "1229", "1230", "1231", "1232", "1233", "1234", "1235", "1236", "1237", "1238", "1240", "1241", "1242", "1243", "1244", "1245", "1246", "1247", "1248", "1249", "1250", "4176", "4202"];
-const PRIVADO_CMP_ID = 1122;
+const PRIVADO_CMP_ID = 235;
 const API_URL = `https://test.api.cookie.privado.ai/test`;
 const CSS_URL = `https://cdn.privado.ai/version/indexV1.css`;
 const GVL_URL = `https://www.cdn.privado.ai/version/gvl.json`;
@@ -28,28 +28,33 @@ window.dataLayer = window.dataLayer || [];
 GVL.baseUrl = GVL_URL.substring(0, GVL_URL.lastIndexOf("/") + 1);
 GVL.latestFilename = GVL_URL.substring(GVL_URL.lastIndexOf("/") + 1);
 const gvl = new GVL();
+let currentTcString = document.cookie?.split('; ').find(row => row.startsWith('preferences_tcf'))?.split('=')[1] || '';
 gvl.readyPromise.then(()=>{
   gvl.narrowVendorsTo(VENDORS);
-})
-const tcModel = new TCModel(gvl); 
-tcModel.cmpId = PRIVADO_CMP_ID// my CMP ID
-tcModel.cmpVersion = 3// my CMP Version
+});
+let tcModel = new TCModel(gvl); 
+tcModel.cmpId = PRIVADO_CMP_ID;
+tcModel.cmpVersion = 4;
 
-const privadoCmpApi = new CmpApi(PRIVADO_CMP_ID, 3, true);
-//Set gdprApplies true
+const privadoCmpApi = new CmpApi(PRIVADO_CMP_ID, 4, true);
 if (injectedOptions.isIabTcf) {
-  privadoCmpApi.update('', true);
-}
-else{
+  privadoCmpApi.update(currentTcString, !currentTcString);
+} else {
+  // set gdprApplies False
   privadoCmpApi.update(null);
 }
 
-const updateTCString = () => {
+const updateTCString = (setOnlyEventStatus = undefined) => {
   if (injectedOptions.isIabTcf){
-    tcModel.gvl.readyPromise.then(() => {
+    if (setOnlyEventStatus !== undefined){
+      privadoCmpApi.update(currentTcString, setOnlyEventStatus);
+      return;
+    }
+    gvl.readyPromise.then(() => {
       const encodedTCString = TCString.encode(tcModel);
       document.cookie = `preferences_tcf=${encodedTCString}; expires=${new Date(new Date().getTime() + 31536000000).toGMTString()}; SameSite=Lax; path=/`;
       privadoCmpApi.update(encodedTCString, false);
+      currentTcString = encodedTCString;
     });
   }
 }
@@ -69,18 +74,20 @@ let LEGITIMATE_VENDORS = [];
 let LEGITIMATE_PURPOSES = [];
 let FEATURES_ALLOWED = [];
 
-const storedTcString = document.cookie?.split('; ').find(row => row.startsWith('preferences_tcf'))?.split('=')[1] || '';
-if (storedTcString){
-  const storedTcModel = TCString.decode(storedTcString);
-   PURPOSES_ALLOWED_ = Array.from(storedTcModel.purposeConsents.set_);
-   VENDORS_ALLOWED = Array.from(storedTcModel.vendorConsents.set_);
-   LEGITIMATE_VENDORS = Array.from(storedTcModel.vendorLegitimateInterests.set_); 
-   LEGITIMATE_PURPOSES = Array.from(storedTcModel.purposeLegitimateInterests.set_);   
-   FEATURES_ALLOWED = Array.from(storedTcModel.specialFeatureOptins.set_);   
+if (currentTcString){
+  gvl.readyPromise.then(()=>{
+    tcModel = TCString.decode(currentTcString);
+    tcModel.gvl = gvl;
+    PURPOSES_ALLOWED = Array.from(tcModel.purposeConsents.set_);
+    VENDORS_ALLOWED = Array.from(tcModel.vendorConsents.set_);
+    LEGITIMATE_VENDORS = Array.from(tcModel.vendorLegitimateInterests.set_); 
+    LEGITIMATE_PURPOSES = Array.from(tcModel.purposeLegitimateInterests.set_);   
+    FEATURES_ALLOWED = Array.from(tcModel.specialFeatureOptins.set_);   
+  });
 }
 
-tcModel.gvl.readyPromise.then(()=>{
- Object.values(tcModel.gvl.vendors).forEach((vendor)=>{
+gvl.readyPromise.then(()=>{
+  Object.values(gvl.vendors).forEach((vendor)=>{
       vendor.purposes.forEach((purpose)=>{
         PURPOSES.add(purpose);
       });   
@@ -96,8 +103,7 @@ tcModel.gvl.readyPromise.then(()=>{
       }
     }
   )
-})
-
+  })
 
 const privadoUpdateDataLayer = () => {  
   dataLayer.push({"event": 'setCookieConsent', "CookieConsent": COOKIES_ALLOWED.toString()});
@@ -297,15 +303,8 @@ class CookieConsent {
     var expiryDate = oneYearLater.toGMTString();
     document.cookie = `preferences=${COOKIES_ALLOWED.join(',')}; expires=${expiryDate}; SameSite=Lax; path=/`;
     //Add beacon
-    if (source_desc === "Accept All"){      
-      if (injectedOptions.isIabTcf){
-      VENDORS_ALLOWED = VENDORS;
-      tcModel.vendorConsents.set(VENDORS_ALLOWED);
-      tcModel.purposeConsents.set(PURPOSES_ALLOWED);
-     updateTCString();
-    }
+    updateTCString();
 
-    }
     if(navigator.sendBeacon){
       const beaconData = JSON.stringify({
         domain_key: injectedOptions.key,
@@ -331,33 +330,22 @@ class CookieConsent {
   }
 
   consentRevoked() {
-    // PURPOSES.forEach((purpose) => {
-    //   const isChecked = document.getElementById(purpose).checked;
-    //   if (isChecked) {
-    //     PURPOSES_ALLOWED.push(purpose);
-    //   } else if (!isChecked && PURPOSES_ALLOWED.includes(purpose)) {
-    //     PURPOSES_ALLOWED = PURPOSES_ALLOWED.filter(
-    //       (x) => x !== purpose
-    //     );
-    //   }
-    // });
-    // tcModel.purposeConsents.set(PURPOSES_ALLOWED);
-    // updateTCString();
-    CATEGORIZATION.forEach(category => {
-      if(category.state !== 2) {
-        const isChecked = document.getElementById(category.key.toLocaleUpperCase()).checked;
-        if(isChecked && !COOKIES_ALLOWED.includes(category.key.toLocaleUpperCase()))
-          COOKIES_ALLOWED.push(category.key.toLocaleUpperCase());
-        else if(!isChecked && COOKIES_ALLOWED.includes(category.key.toLocaleUpperCase()))
-          COOKIES_ALLOWED = COOKIES_ALLOWED.filter(x => x !== category.key.toLocaleUpperCase())
-      }
-    });
-
+    if (injectedOptions.isIabTcf){  
+      tcModel.vendorLegitimateInterests.empty();
+      tcModel.vendorLegitimateInterests.set(LEGITIMATE_VENDORS)
+      tcModel.vendorConsents.empty();
+      tcModel.vendorConsents.set(VENDORS_ALLOWED)
+      tcModel.purposeLegitimateInterests.empty();
+      tcModel.purposeLegitimateInterests.set(LEGITIMATE_PURPOSES);
+      tcModel.purposeConsents.empty();
+      tcModel.purposeConsents.set(PURPOSES_ALLOWED);
+      tcModel.specialFeatureOptins.empty();
+      tcModel.specialFeatureOptins.set(FEATURES_ALLOWED); 
+    }
+    
     const privadoModal = document.getElementById("manage-cookies");
     if(privadoModal)
       privadoModal.style.display = "none";
-
-
     this.removeAllEventListeners();
 
     this.setPreferenceCookies("Consent Revoked", "Consent Revoked");
@@ -775,7 +763,19 @@ class CookieConsent {
     if (privadoModal)
       privadoModal.parentNode.removeChild(privadoModal);
 
-    PURPOSES_ALLOWED = Array.from(PURPOSES);
+    if (injectedOptions.isIabTcf){
+      PURPOSES_ALLOWED = Array.from(PURPOSES);
+      VENDORS_ALLOWED = VENDORS;
+      FEATURES_ALLOWED = Array.from(FEATURES);
+      LEGITIMATE_PURPOSES = Array.from(PURPOSES)
+      LEGITIMATE_VENDORS = VENDORS;
+      tcModel.vendorConsents.set(VENDORS_ALLOWED);
+      tcModel.purposeConsents.set(PURPOSES_ALLOWED);
+      tcModel.specialFeatureOptins.set(FEATURES_ALLOWED);
+      tcModel.purposeLegitimateInterests.set(LEGITIMATE_PURPOSES);
+      tcModel.vendorLegitimateInterests.set(LEGITIMATE_VENDORS);
+    } 
+    
     COOKIES_ALLOWED = COOKIE_TYPES;
     this.setPreferenceCookies("Cookie Banner", "Accept All");
 
@@ -865,20 +865,6 @@ class CookieConsent {
         const savepreferencesClick = document.getElementById("save-button");
         if(savepreferencesClick) {
           savepreferencesClick.addEventListener('click', function () {
-          if (injectedOptions.isIabTcf){  tcModel.vendorLegitimateInterests.empty();
-            tcModel.vendorLegitimateInterests.set(LEGITIMATE_VENDORS)
-            tcModel.vendorConsents.empty();
-            tcModel.vendorConsents.set(VENDORS_ALLOWED)
-            tcModel.purposeLegitimateInterests.empty();
-            tcModel.purposeLegitimateInterests.set(LEGITIMATE_PURPOSES);
-            tcModel.purposeConsents.empty();
-            tcModel.purposeConsents.set(PURPOSES_ALLOWED);
-            tcModel.specialFeatureOptins.empty();
-            tcModel.specialFeatureOptins.set(FEATURES_ALLOWED); 
-            console.log(tcModel);  
-            //Update TC String on changing consent
-            updateTCString();
-          }
 
             if (cookieState.type === "changeConsent") {
               document.dispatchEvent(new Event("revokeConsent"));
@@ -890,19 +876,21 @@ class CookieConsent {
 
   openModal(type) {
     const heading = document.getElementsByClassName("modal-notice-heading")[0];
-    if (heading){
-      heading.children[1].innerHTML = `
-      Manage Cookies
-      `
+    if (heading) {
+      heading.children[1].innerHTML = `Manage Cookies`;
     }
 
-    const backButtonClick = document.getElementById("modal-heading-icon");
+    let backButtonClick = document.getElementById("modal-heading-icon");
     if (backButtonClick) {
+      const newBackButton = backButtonClick.cloneNode(true);
+      if (backButtonClick.parentNode) {
+        backButtonClick.parentNode.replaceChild(newBackButton, backButtonClick);
+        backButtonClick = newBackButton;
+      }
+
       backButtonClick.addEventListener("click", function (e) {
         e.stopPropagation();
         document.dispatchEvent(new Event("hideManageModal"));
-        const newButton = backButtonClick.cloneNode(true);
-        backButtonClick.parentNode.replaceChild(newButton, backButtonClick);
       });
     }
 
@@ -937,10 +925,13 @@ class CookieConsent {
         let isChecked = "checking";
         if( type === "changeConsent" && COOKIES_ALLOWED.includes(category.key.toLocaleUpperCase()) ){
           isChecked = "checked";
-        } else if( type !== "changeConsent" && (category.state === 1 || category.state === 2 )){
+        } else if( type !== "changeConsent"){
+         if (category.state === 1 || category.state === 2 ){
+          isChecked = "checked";      
+         } else if (injectedOptions.isIabTcf && COOKIES_ALLOWED.includes(category.key.toLocaleUpperCase())){
           isChecked = "checked";
         }
-
+      }
         const isCookieSwitchDisabled = category.state === 2;
 
         return `
@@ -994,7 +985,7 @@ class CookieConsent {
         }
         `;
       }).join("")
-      + Object.values(tcModel.gvl.purposes).filter((p)=>PURPOSES.has(p.id) && injectedOptions.isIabTcf)
+      + Object.values(gvl.purposes).filter((p)=>PURPOSES.has(p.id) && injectedOptions.isIabTcf)
       .map((purpose) => {            
       return `
         <div>
@@ -1028,20 +1019,19 @@ class CookieConsent {
           class="cookie-detail-collapsible collapsible-inactive-icon">
       Purpose Details
       </div>
-        <div class="cookie-detail-box">
-        <span style="display:flex">
-      <h5>Purpose Description</h5>
-          This purpose is being used by ${Object.keys(tcModel.gvl.getVendorsWithConsentPurpose(purpose.id)).length} vendors.
-            <p class="privado-para cookie-desc">
-            ${purpose.description}
-          </p>   
+        <div class="cookie-detail-box" >
+        <div class="cookie-detail" >
+      Purpose Description
+        <p> ${Object.keys(gvl.getVendorsWithConsentPurpose(purpose.id)).length} vendors</p>
+           <p> ${purpose.description}</p>
+        </div>
         </div>
       `
           : ""
       }
       `;
       }).join("")
-      +Object.values(tcModel.gvl.specialFeatures).filter((f)=>FEATURES.has(f.id) && injectedOptions.isIabTcf)
+      +Object.values(gvl.specialFeatures).filter((f)=>FEATURES.has(f.id) && injectedOptions.isIabTcf)
       .map((feature) => {  
       return `
         <div>
@@ -1102,14 +1092,13 @@ class CookieConsent {
             if (isChecked.checked && !COOKIES_ALLOWED.includes(category.key.toLocaleUpperCase()))
           {  COOKIES_ALLOWED.push(category.key.toLocaleUpperCase());
           }
-          else if(!isChecked && COOKIES_ALLOWED.includes(category.key.toLocaleUpperCase()))
+          else if(!isChecked.checked && COOKIES_ALLOWED.includes(category.key.toLocaleUpperCase()))
             COOKIES_ALLOWED = COOKIES_ALLOWED.filter(x => x !== category.key.toLocaleUpperCase())
         }
           )
         }
       }
     });
-      
     PURPOSES.forEach((purpose) => {
       const addLegitmateInterests = document.getElementById(`${purpose}-legit`);
       if (addLegitmateInterests){
@@ -1154,27 +1143,27 @@ class CookieConsent {
       heading.children[1].innerHTML = `Vendors`
     }     
 
-    const backButtonClick =
-      document.getElementById("modal-heading-icon");
+    let backButtonClick = document.getElementById("modal-heading-icon");
     //Checks if modal has been opened from manage-cookies tab, takes back to manage-cookies tab
    
     if (backButtonClick) { 
+      const newBackButton = backButtonClick.cloneNode(true);
+      if (backButtonClick.parentNode) {
+        backButtonClick.parentNode.replaceChild(newBackButton, backButtonClick);
+        backButtonClick = newBackButton;
+      }
+
       backButtonClick.addEventListener("click", function (e) {
         e.stopPropagation();
         if (cookieState.type === "changeConsent"){
             document.dispatchEvent(new Event("changeConsent"));
-        }
-        else if (cookieState.type.type === "openModal"){
+        } else if (cookieState.type === "openModal"){
             document.dispatchEvent(new Event("openModal"));
-        }
-        else document.dispatchEvent(new Event("hideManageModal"));
-        const newButton = backButtonClick.cloneNode(true);
-        backButtonClick.parentNode.replaceChild(newButton, backButtonClick);
+        } else document.dispatchEvent(new Event("hideManageModal"));
       });
+      // openVendorModal
     }
     
-    
-
     // Manage Settings Modal
     const privadoModal = document.getElementById(
       "cookie-consent-banner"
@@ -1202,7 +1191,7 @@ class CookieConsent {
       <div style="width:30%">Legitimate Interest</div>
       <div style="width:20%">Consent</div>
     </div>`
-    +Object.values(tcModel.gvl.vendors).map((vendor, i) => {
+    +Object.values(gvl.vendors).map((vendor, i) => {
       let isChecked = VENDORS_ALLOWED.includes(vendor.id)? "checked" : "checking";   
       return `
         <div>
@@ -1256,7 +1245,7 @@ class CookieConsent {
              </div>
              <div style="font-size:14px;padding-top:10px;" > Policy URL:<a href=${vendor.policyUrl}> ${vendor.policyUrl}</a></div>
               <div style="font-size:16px;padding-top:10px;">Purposes</div>
-              ${(Object.values(tcModel.gvl.purposes).filter((p)=>vendor.purposes.includes(p.id)).map((purpose)=>{
+              ${(Object.values(gvl.purposes).filter((p)=>vendor.purposes.includes(p.id)).map((purpose)=>{
                 return `
                   <div style="font-size:12px">
                       ${purpose.name}
@@ -1264,7 +1253,7 @@ class CookieConsent {
                 `
               })).join("")}
               <div style="font-size:16px;padding-top:10px;"> Special Purposes</div>
-              ${(Object.values(tcModel.gvl.specialPurposes).filter((p)=>vendor.specialPurposes.includes(p.id)).map((purpose)=>{
+              ${(Object.values(gvl.specialPurposes).filter((p)=>vendor.specialPurposes.includes(p.id)).map((purpose)=>{
                 return `
                   <div style="font-size:12px;">
                       ${purpose.name}
@@ -1273,7 +1262,7 @@ class CookieConsent {
               })).join("")}
               <div style="font-size:16px;padding-top:10px;"> ${vendor.features? "Features":""}</div>
               <p class="privado-para cookie-desc">
-                ${(Object.values(tcModel.gvl.features).filter((f)=>vendor.features.includes(f.id)).map((feature)=>{
+                ${(Object.values(gvl.features).filter((f)=>vendor.features.includes(f.id)).map((feature)=>{
                   return `
                     <div style="font-size:12px;">
                         ${feature.name} 
@@ -1282,7 +1271,7 @@ class CookieConsent {
                 })).join("")}
               </p> 
               <div style="font-size:16px;padding-top:10px;">${vendor.specialFeatures.length? "Special Features":""}</div>
-              ${(Object.values(tcModel.gvl.specialFeatures).filter((f)=>vendor.specialFeatures.includes(f.id)).map((feature)=>{
+              ${(Object.values(gvl.specialFeatures).filter((f)=>vendor.specialFeatures.includes(f.id)).map((feature)=>{
                 return `
                   <div style="font-size:12px;">
                       ${feature.name}
@@ -1306,7 +1295,7 @@ class CookieConsent {
         if (isChecked.checked){
           VENDORS_ALLOWED.push(vendor);
         } else if (
-          !isChecked &&
+          !isChecked.checked &&
           VENDORS_ALLOWED.includes(vendor)
         ) {
             VENDORS_ALLOWED = VENDORS_ALLOWED.filter((x) => x !== vendor);
@@ -1343,6 +1332,8 @@ class CookieConsent {
     const vendorsSet = this.getCookie(`preferences_tcf`);
     if(preferenceSet === false || vendorsSet === false  ){
       this.showPrivacyBanner();
+    } else {
+      updateTCString(false);
     }
   }
 
@@ -1533,9 +1524,8 @@ class CookieConsent {
 
 
       vendorsTabButtonClick.addEventListener("click", () => {
-        const even = new Event("openVendorModal");
-        cookieState.type = even;
-        document.dispatchEvent(even);
+        cookieState.type = "openVendorModal";
+        document.dispatchEvent(new Event("openVendorModal"));
       });
 
       manageSettingButtonClick.addEventListener('click', function () {
@@ -1544,9 +1534,8 @@ class CookieConsent {
         if(privadoBrandingElement && CUSTOMIZATION.remove_privado_branding){
           privadoBrandingElement.style.display = 'none';
         }
-        const ev = new Event("openModal");
-        cookieState.type = ev;
-        document.dispatchEvent(ev);
+        cookieState.type = "openModal";
+        document.dispatchEvent(new Event("openModal"));
       });
       acceptAllButtonClick.addEventListener('click', function () {
         document.dispatchEvent(new Event("acceptAllButtonClick"));
@@ -1599,6 +1588,18 @@ class CookieConsent {
     }
   }
   savepreferences() {
+    if (injectedOptions.isIabTcf){  tcModel.vendorLegitimateInterests.empty();
+      tcModel.vendorLegitimateInterests.set(LEGITIMATE_VENDORS)
+      tcModel.vendorConsents.empty();
+      tcModel.vendorConsents.set(VENDORS_ALLOWED)
+      tcModel.purposeLegitimateInterests.empty();
+      tcModel.purposeLegitimateInterests.set(LEGITIMATE_PURPOSES);
+      tcModel.purposeConsents.empty();
+      tcModel.purposeConsents.set(PURPOSES_ALLOWED);
+      tcModel.specialFeatureOptins.empty();
+      tcModel.specialFeatureOptins.set(FEATURES_ALLOWED); 
+    }
+
     this.setPreferenceCookies("Settings", "Save Preferences");
     const privadoModal = document.getElementById("manage-cookies");
     if(privadoModal)
@@ -1609,6 +1610,12 @@ class CookieConsent {
   }
 
   denyConsent() {
+    VENDORS_ALLOWED = [];
+    PURPOSES_ALLOWED = [];
+    FEATURES_ALLOWED = [];
+    tcModel.vendorConsents.empty();
+    tcModel.purposeConsents.empty();
+    tcModel.specialFeatureOptins.empty();
     COOKIES_ALLOWED = CATEGORIZATION.reduce((acc, category) => {
       if(category.state === 2)
         return [...acc, category.key];
@@ -1655,7 +1662,8 @@ class CookieConsent {
       document.addEventListener("savePreferences", this.savepreferences);
       document.addEventListener("changeConsent", () => {
         cookieState.type = "changeConsent";
-        this.openModal("changeConsent")
+        updateTCString(true);
+        this.openModal("changeConsent");
       });
       document.addEventListener("revokeConsent", this.consentRevoked);
       document.addEventListener("hidePrivacyBanner", this.hidePrivacyBanner);
