@@ -34,9 +34,9 @@ gvl.readyPromise.then(()=>{
 });
 let tcModel = new TCModel(gvl); 
 tcModel.cmpId = PRIVADO_CMP_ID;
-tcModel.cmpVersion = 4;
+tcModel.cmpVersion = 2;
 
-const privadoCmpApi = new CmpApi(PRIVADO_CMP_ID, 4, true);
+const privadoCmpApi = new CmpApi(PRIVADO_CMP_ID, 2, true);
 if (injectedOptions.isIabTcf) {
   privadoCmpApi.update(currentTcString, !currentTcString);
 } else {
