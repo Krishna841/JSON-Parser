@@ -78,6 +78,7 @@ let FEATURES_ALLOWED = [];
 if (currentTcString){
   gvl.readyPromise.then(()=>{
     tcModel = TCString.decode(currentTcString);
+    console.log(tcModel, "decode");
     tcModel.gvl = gvl;
     PURPOSES_ALLOWED = Array.from(tcModel.purposeConsents.set_);
     VENDORS_ALLOWED = Array.from(tcModel.vendorConsents.set_);
@@ -1301,7 +1302,6 @@ class CookieConsent {
         ) {
             VENDORS_ALLOWED = VENDORS_ALLOWED.filter((x) => x !== vendor);
           }
-            console.log(VENDORS_ALLOWED);
         })
     }
             
@@ -1593,15 +1593,14 @@ class CookieConsent {
     if (IS_IAB_TCF){  tcModel.vendorLegitimateInterests.empty();
       tcModel.vendorLegitimateInterests.set(LEGITIMATE_VENDORS)
       tcModel.vendorConsents.empty();
-      console.log(VENDORS_ALLOWED);
       tcModel.vendorConsents.set(VENDORS_ALLOWED);
-      console.log(tcModel.vendorConsents);
       tcModel.purposeLegitimateInterests.empty();
       tcModel.purposeLegitimateInterests.set(LEGITIMATE_PURPOSES);
       tcModel.purposeConsents.empty();
       tcModel.purposeConsents.set(PURPOSES_ALLOWED);
       tcModel.specialFeatureOptins.empty();
       tcModel.specialFeatureOptins.set(FEATURES_ALLOWED); 
+      console.log(tcModel);
     }
 
     this.setPreferenceCookies("Settings", "Save Preferences");
