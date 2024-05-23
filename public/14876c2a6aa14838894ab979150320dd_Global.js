@@ -1593,7 +1593,9 @@ class CookieConsent {
     if (IS_IAB_TCF){  tcModel.vendorLegitimateInterests.empty();
       tcModel.vendorLegitimateInterests.set(LEGITIMATE_VENDORS)
       tcModel.vendorConsents.empty();
-      tcModel.vendorConsents.set(VENDORS_ALLOWED)
+      console.log(VENDORS_ALLOWED);
+      tcModel.vendorConsents.set(VENDORS_ALLOWED);
+      console.log(tcModel.vendorConsents);
       tcModel.purposeLegitimateInterests.empty();
       tcModel.purposeLegitimateInterests.set(LEGITIMATE_PURPOSES);
       tcModel.purposeConsents.empty();
