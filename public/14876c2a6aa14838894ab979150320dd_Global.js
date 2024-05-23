@@ -53,10 +53,10 @@ const updateTCString = (setOnlyEventStatus = undefined) => {
     }
     gvl.readyPromise.then(() => {
      const encodedTCString = TCString.encode(tcModel);
-      document.cookie = `preferences_tcf=${encodedTCString}; expires=${new Date(new Date().getTime() + 31536000000).toGMTString()}; SameSite=Lax; path=/`;
+     console.log(TCString.decode(encodedTCString));
+     document.cookie = `preferences_tcf=${encodedTCString}; expires=${new Date(new Date().getTime() + 31536000000).toGMTString()}; SameSite=Lax; path=/`;
       privadoCmpApi.update(encodedTCString, false);
       currentTcString = encodedTCString;
-    console.log(TCString.decode(encodedTCString));
     });
   }
 }
@@ -79,7 +79,6 @@ let FEATURES_ALLOWED = [];
 if (currentTcString){
   gvl.readyPromise.then(()=>{
     tcModel = TCString.decode(currentTcString);
-    console.log(tcModel, "decode");
     tcModel.gvl = gvl;
     PURPOSES_ALLOWED = Array.from(tcModel.purposeConsents.set_);
     VENDORS_ALLOWED = Array.from(tcModel.vendorConsents.set_);
