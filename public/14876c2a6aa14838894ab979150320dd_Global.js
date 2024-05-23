@@ -1301,8 +1301,9 @@ class CookieConsent {
         ) {
             VENDORS_ALLOWED = VENDORS_ALLOWED.filter((x) => x !== vendor);
           }
+            console.log(VENDORS_ALLOWED);
         })
-      }
+    }
             
     const addLegitmateInterests = document.getElementById(`${vendor}-legit`);
       if (addLegitmateInterests){
