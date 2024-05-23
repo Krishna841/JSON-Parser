@@ -52,7 +52,8 @@ const updateTCString = (setOnlyEventStatus = undefined) => {
       return;
     }
     gvl.readyPromise.then(() => {
-      const encodedTCString = TCString.encode(tcModel);
+    console.log(tcModel);
+     const encodedTCString = TCString.encode(tcModel);
       document.cookie = `preferences_tcf=${encodedTCString}; expires=${new Date(new Date().getTime() + 31536000000).toGMTString()}; SameSite=Lax; path=/`;
       privadoCmpApi.update(encodedTCString, false);
       currentTcString = encodedTCString;
