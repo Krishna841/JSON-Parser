@@ -8,6 +8,7 @@ function App() {
     <div className="w-screen h-screen grid grid-cols-2">
       <JsonInput jsonSchema={jsonSchema} setJsonSchema={setJsonSchema} />
       <OutputForm jsonSchema={jsonSchema} setJsonSchema={setJsonSchema} />
+    <button id="privado-changepreferences">Change Preference </button>
     </div>
   );
 }
